@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my E-com website</title>
+    <link rel="shortcut icon" href="https://images.unsplash.com/photo-1592503254549-d83d24a4dfab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/a018575124.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ecom.css">
+</head>
+  <section class="sec-01">
+      <div class="container">
+          <h2 class="main-title">Reveal elements scroll</h2>
+          <div class="content">
+              <div class="image">
+                  <img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="a pic">
+              </div>
+              <div class="text-box">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid laboriosam placeat voluptas? Quaerat recusandae ratione, sequi dignissimos labore vitae saepe deleniti dolorem quae excepturi, accusantiu</p>
+              </div>
+          </div>
+          <div class="media-icons">
+              <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </section>
+  
+
+  <section class="sec-02">
+      <div class="container">
+          <h3 class="section-title">lorem ipsum</h3>
+          <div class="content">
+              <div class="image">
+                  <img src="https://images.unsplash.com/photo-1561657819-51c0511e35ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt=" apic" >
+              </div>
+              <div class="info">
+                  <h4 class="info-title">description</h4>
+                  <p class="man">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sit odit, consequuntur dolore hic corrupti eaque aliquam ad quos, ut aut architecto quae magni tenetur quidem ex incidunt accusantium minima dolores molestias, expedita reprehenderit. Obcaecati dolores tenetur et necessitatibus laboriosam.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+    <script>
+        ScrollReveal({ reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400,
+             });
+
+            ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin:'left'});
+            ScrollReveal().reveal(' .sec-01 .image', { delay: 600, origin:'bottom',rotate: {
+    x: 20,
+    z: 20
+  }});
+            ScrollReveal().reveal('.text-box', { delay: 700, origin:'right'});
+            ScrollReveal().reveal('.sec-02 .image', { delay: 700, origin:'right', rotate: {
+    x: 20,
+    z: 20
+  }});
+            ScrollReveal().reveal('.info-title', { delay: 700, origin:'left'});
+            ScrollReveal().reveal('.man', { delay: 700, origin:'right'});
+            ScrollReveal().reveal('.media-icons i', { delay: 700, origin:'bottom', interval:200});
+    </script>
+</body>
+</html>
